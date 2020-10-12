@@ -1,0 +1,19 @@
+Identify human face in digital images.
+application: smart attendance system, mobile camera focus on your face,  Avataar 
+
+Haar Cascade Frontal Face Algorithm
+they use binary image to compare with the face. It is based on the Haar Wavelet technique to analyze pixels in the image into squares by function.
+It uses Adaboost machine learning algotrithm for training. This algorithm is opensource
+
+Extarction of the coordinate of face by using "detectMultiScale()" 
+Syntax:
+faces=face_cascade.detectMultiScale(srcImg,saclefactor,minNeighbors)
+
+Workflow of face detection
+1. loding HaarCascadeFace algo with the help of cv library
+2. initialize camera
+3.readng frame from the camera
+4. convert color image into grayscale image
+5. obtaining face cooradinates by passing algo
+6. drawing the rectangle on the face coordinates
+7. Display the o/p frame.   
